@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
 			resolve(inputArry);
-			}, 3000);
+			},0);
 		});
 	};
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
 				let multiply = evenNumbers.map(item => item * 2);
-			output.innerHTML += multiply.join(",");
+			output.innerHTML += multiply.join(", ");
 			resolve(multiply);
 			},2000);
 		})
