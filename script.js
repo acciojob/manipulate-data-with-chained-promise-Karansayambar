@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
 				let evenNumbers = filteredData.filter(item => item % 2 === 0);
+			    output.innerHTML += evenNumbers.join(", ");
 			    resolve(evenNumbers);
-			},0);
+			},1000);
 		});
 	})
 	.then(evenNumbers => {
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				let multiply = evenNumbers.map(item => item * 2);
 			output.innerHTML += multiply.join(",");
 			resolve(multiply);
-			},0);
+			},2000);
 		})
 	})
 	.catch(err => {
