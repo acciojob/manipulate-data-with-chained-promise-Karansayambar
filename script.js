@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(inputArry);
-            }, 3000);
+            });
         });
     };
 
