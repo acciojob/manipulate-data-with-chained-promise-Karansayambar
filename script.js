@@ -4,9 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let promise1 = (inputArry) => {
         return new Promise((resolve, reject) => {
-            setTimeout(() => {
                 resolve(inputArry);
-            });
         });
     };
 
